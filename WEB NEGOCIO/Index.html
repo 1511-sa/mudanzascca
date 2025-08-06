@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mudanzas CCA</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      height: 300px;
+      background: black;
+      overflow: hidden;
+    }
+    header img.bg-logo {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      opacity: 0.3;
+    }
+    header .overlay {
+      background-color: rgba(0, 0, 0, 0.6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+    header .header-content {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 5px 10px;
+      transition: background-color 0.3s, border-radius 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: rgb(78, 76, 76);
+      border-radius: 5px;
+      color: #e3f2fd;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    section:hover {
+      background-color: #dcdcdc;
+      transform: translateY(-5px);
+    }
+
+    h2 {
+      color: #000000;
+      margin-bottom: 10px;
+      transition: color 0.3s;
+    }
+
+    .servicios-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .servicios-text {
+      flex: 1 1 50%;
+    }
+
+    .servicios-image {
+      flex: 1 1 40%;
+    }
+
+    .servicios-image img {
+      max-width: 75%;
+      border-radius: 10px;
+    }
+
+    footer {
+      background: #000000;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .contact-form button {
+      background: #1e88e5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #1565c0;
+    }
+
+    .whatsapp-button, .instagram-link {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      color: white;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    .whatsapp-button { background: #25D366; }
+    .instagram-link { background: #e1306c; margin-left: 10px; }
+    .whatsapp-button i, .instagram-link i {
+      margin-right: 8px;
+    }
+    .whatsapp-button:hover, .instagram-link:hover {
+      transform: scale(1.05);
+    }
+
+    #nosotros p:first-of-type {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img class="bg-logo" src="Logo.png" alt="Fondo Logo Mudanzas CCA">
+    <div class="overlay"></div>
+    <div class="header-content">
+      <h1>Mudanzas CCA</h1>
+      <nav>
+        <a href="#servicios">Servicios</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <p>Ofrecemos un servicio de mudanzas y transportes fiable, puntual y con trato profesional. Ideal para traslados de viviendas, oficinas, muebles, electrodomésticos o mercancía en general.</p>
+      <div class="servicios-content">
+        <div class="servicios-text">
+          <ul>
+            <li>Mudanzas</li>
+            <li>Transporte mobiliario</li>
+            <li>Carga y Descarga</li>
+            <li>Transporte local y nacional</li> 
+            <li>Embalaje y protección de muebles</li>
+          </ul>
+        </div>
+        <div class="servicios-image">
+          <img src="Imagen mudanza.jpg" alt="Imagen servicio de mudanza">
+        </div>
+      </div>
+    </section>
+
+    <section id="nosotros">
+      <h2>Nosotros</h2>
+      <p>En Mudanzas CCA, nos apasiona hacer que cada mudanza sea fácil, rápida y segura. Somos un equipo joven y comprometido con ofrecer un servicio de transporte confiable, adaptado a las necesidades de nuestros clientes.</p>
+      <p>- Cobertura en Valencia y traslados a cualquier punto de la Península.</p>
+      <p>- Cuidado y protección de los objetos durante la carga y descarga.</p>
+      <p>- Presupuestos cerrados y sin sorpresas.</p>
+      <p>- Posibilidad de ayuda adicional para carga/descarga (consultar condiciones).</p>
+      <p>- Trato responsable, discreto y comprometido con cada cliente.</p>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puede ponerse en contacto con nosotros a través de nuestro:</p>
+      <a class="whatsapp-button" href="https://wa.me/34695013218?text=Hola%2C%20quiero%20pedir%20informaci%C3%B3n%20sobre%20una%20mudanza" target="_blank">
+        <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+      </a>
+      <a class="instagram-link" href="https://www.instagram.com/mudanzascca/" target="_blank">
+        <i class="fab fa-instagram"></i> Síguenos en Instagram
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Mudanzas CCA - Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
